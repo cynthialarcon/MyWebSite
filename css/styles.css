@@ -1,0 +1,623 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif, Arial, Sans-serif;
+	font-size: 16px;
+}
+
+.container {
+	width: 95%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+}
+
+/* ----- ----- HEADER ----- ----- */
+
+header {
+	width: 100%;
+	background-color: #FF6679;
+}
+
+header .container {
+	position: relative;
+	height: 700px;
+}
+
+header .menu {
+	width: 100%;
+	text-align: right;
+}
+
+header .text {
+	width: 100%;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	margin-top:-52px;
+}
+
+header .text .name {
+	font-family: 'Cabin Sketch', cursive;
+	font-size: 50px;
+	font-weight: 700;
+}
+
+header .text h3 {
+	font-weight: 400;
+	font-size: 25px;
+	font-family: 'Open Sans';
+}
+
+/* ----- ----- MAIN ----- ----- */
+.main {
+	background: url('../img/bg-textura.png');
+	background-repeat: repeat;
+}
+
+.main .about .container {
+	overflow: visible;
+	position: relative;
+}
+
+.main .about .foto {
+	width: 80%;
+	position: absolute;
+	left: 0;
+	top:-50px;
+	z-index: 0;
+	box-shadow: 0px 0px 15px rgba(0,0,0,.35);
+}
+
+.main .about .foto img {
+	vertical-align: top;
+	width: 100%;
+}
+
+.main .about article {
+	background: #fff;
+	padding: 40px;
+	width: 52%;
+	position: relative;
+	top:500px;
+	z-index: 1;
+	float: right;
+	box-shadow: 0px 0px 15px rgba(0,0,0,.35);
+}
+
+.main .about article h3 {
+	font-family: 'Cabin Sketch';
+	font-size: 34px;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+
+.main .about article h4 {
+	font-weight: 400;
+	color: #FF6679;
+}
+
+.main .about article p{
+	line-height: 22px;
+	margin-bottom: 15px;
+	font-weight: 300;
+}
+
+/* ----- ----- MENU ----- ----- */
+
+.main .menu {
+	padding-top: 400px;
+
+}
+/* ----- ----- PORTFOLIO ----- ----- */
+.main .menu .container-portfolio{
+	overflow: hidden;
+}
+
+.main .menu .container-portfolio .portfolio {
+		padding-top: 570px;
+    background-color: #FF6679;
+    padding: 60px 0;
+}
+
+.main .menu .container-portfolio .portfolio .container {
+    overflow: hidden;
+}
+
+.main .menu .container-portfolio .portfolio .container .title {
+		font-family: 'Cabin Sketch';
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+}
+
+.main .menu .container-portfolio .portfolio .container .container-Portfolio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main .menu .container-portfolio .portfolio .container .container-Portfolio .browser{
+	background-color: #EBEBEB;
+	border-radius: 4px;
+	margin: 20px auto;
+	width: 710px;
+	height: 450px;
+	box-shadow: 0px 3px 30px 0px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.main .menu .container-portfolio .portfolio .container .container-Portfolio .browser .browser-header {
+  flex-basis: auto;
+  height: 35px;
+  background: #ebebeb;
+  border-bottom: 1px solid #969696;
+  display: flex;
+}
+
+.main .menu .container-portfolio .portfolio .container .container-Portfolio .browser .browser-header .browser-btns {
+  height: 35px;
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 38px;
+  width: 65px;
+  flex-basis: auto;
+}
+
+.main .menu .container-portfolio .portfolio .container .container-Portfolio .browser .browser-header .browser-btns .browser-btn {
+  width: 10px;
+  height: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  display: inline-block;
+  margin: 1px;
+}
+.main .menu .container-portfolio .portfolio .container .container-Portfolio .browser .browser-header .browser-btns .browser-btn.close {
+  background-color: #FD615B;
+}
+.main .menu .container-portfolio .portfolio .container .container-Portfolio .browser .browser-header .browser-btns .browser-btn.retract {
+  background-color: #FDBC40;
+}
+.main .menu .container-portfolio .portfolio .container .container-Portfolio .browser .browser-header .browser-btns .browser-btn.expand {
+  background-color: #33C84A;
+}
+
+.main .menu .container-portfolio .portfolio .container .container-Portfolio .browser .browser-header .tabs {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  line-height: 35px;
+  max-height: 35px;
+  display: inline-block;
+  padding: 0 12px;
+}
+.main .menu .container-portfolio .portfolio .container .container-Portfolio .browser .browser-header .tabs .tab {
+  color: #333;
+  float: left;
+  margin: 10px -10px 0;
+  border-top-right-radius: 25px 170px;
+  border-top-left-radius: 20px 90px;
+  padding: 0 30px 0 25px;
+  height: 170px;
+  background: #CBCCCC;
+  position: relative;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  width: 150px;
+  border: 1px solid #B4B4B4;
+  font-size: 11px;
+  font-family: Verdana, sans-serif;
+  line-height: 25px;
+  cursor: pointer;
+}
+.main .menu .container-portfolio .portfolio .container .container-Portfolio .browser .browser-header .tabs .tab:before{
+/*.main .menu .container-portfolio .portfolio .container .container-Portfolio .browser .browser-header .tabs .tab:after {*/
+  content: "";
+  background: transparent;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  border-width: 10px;
+  top: 0px;
+  border-style: solid;
+  position: absolute;
+}
+.main .menu .container-portfolio .portfolio .container .container-Portfolio .browser .browser-header .tabs .tab:before {
+  border-color: transparent #CBCCCC transparent transparent;
+  -webkit-transform: rotate(50deg);
+  left: -23px;
+}
+.main .menu .container-portfolio .portfolio .container .container-Portfolio .browser .browser-header .tabs .tab:after {
+  border-color: transparent transparent transparent #CBCCCC;
+  -webkit-transform: rotate(-50deg);
+  right: -17px;
+}
+.main .menu .container-portfolio .portfolio .container .container-Portfolio .browser .browser-header .tabs .tab .fa {
+  font-size: 13px;
+}
+
+.main .menu .container-portfolio .portfolio .container .container-Portfolio .browser .browser-header .tabs .tab .close {
+  position: absolute;
+  right: 25px;
+  top: 0px;
+  display: inline-block;
+  color: #888;
+  margin-left: 5px;
+}
+.main .menu .container-portfolio .portfolio .container .container-Portfolio .browser .browser-header .tabs .tab .close:after {
+  position: absolute;
+  content: "";
+  width: 139px;
+  display: block;
+  height: 1px;
+  background: #969696;
+  z-index: 3;
+  top: 24px;
+  right: -15px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
+}
+.main .menu .container-portfolio .portfolio .container .container-Portfolio .browser .browser-header .tabs .tab.active {
+  background: #EBEEEB;
+}
+.main .menu .container-portfolio .portfolio .container .container-Portfolio .browser .browser-header .tabs .tab.active:before {
+  border-color: transparent #EBEEEB transparent transparent;
+  z-index: 2;
+}
+.main .menu .container-portfolio .portfolio .container .container-Portfolio .browser .browser-header .tabs .tab.active:after {
+  border-color: transparent transparent transparent #EBEEEB;
+  z-index: 2;
+}
+.main .menu .container-portfolio .portfolio .container .container-Portfolio .browser .browser-header .tabs .tab.active .close:after {
+  display: none;
+}
+
+.main .menu .container-portfolio .portfolio .container .container-Portfolio .browser .browser-bar {
+  flex-basis: auto;
+  height: 40px;
+  background: #EBEEEB;
+  z-index: 15;
+  padding: 6px;
+  border-bottom: 1px solid #aaa;
+  display: flex;
+}
+.main .menu .container-portfolio .portfolio .container .container-Portfolio .browser .browser-bar .button {
+  flex-basis: auto;
+  text-align: center;
+  font-size: 17px;
+  color: #6D6D6E;
+  padding: 3px;
+  display: inline-block;
+  width: 25px;
+  border: 1px solid #EBEEEB;
+}
+.main .menu .container-portfolio .portfolio .container .container-Portfolio .browser .browser-bar .button:not(.inactive):hover {
+  border: 1px solid #b4bfb4;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.main .menu .container-portfolio .portfolio .container .container-Portfolio .browser .browser-bar .button.inactive {
+  opacity: 0.3;
+}
+.main .menu .container-portfolio .portfolio .container .container-Portfolio .browser .browser-bar .address {
+  flex: 1;
+  background: #fff;
+  border-radius: 3px;
+  margin: 0px 3px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+.main .menu .container-portfolio .portfolio .container .container-Portfolio .browser .page {
+  flex: 1;
+  background: black;
+  z-index: 10;
+  text-align: center;
+  overflow-y: auto;
+  position: relative;
+}
+
+.main .menu .container-portfolio .portfolio .container .container-Portfolio .browser .page.fernando{
+	background: black;
+}
+
+.main .menu .container-portfolio .portfolio .container .container-Portfolio .browser .page.cicata {
+	background: white;
+}
+
+.main .menu .container-portfolio .portfolio .container .container-Portfolio .browser .page.ul {
+	background: #8CD3FF;
+}
+
+.main .menu .container-portfolio .portfolio .container .container-Portfolio .browser .page h1 {
+  font-size: 3em;
+  font-family: "Abril Fatface", cursive;
+  margin-bottom: 0;
+  color: rgba(255, 0, 0, 0.3);
+}
+.main .menu .container-portfolio .portfolio .container .container-Portfolio .browser .page h1 span {
+  color: rgba(255, 0, 0, 0.5);
+}
+.main .menu .container-portfolio .portfolio .container .container-Portfolio .browser .page h2 {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  color: rgba(71, 207, 115, 0.8);
+}
+
+.main .menu .container-portfolio .portfolio .container .container-Portfolio .browser .page .image img{
+  width: 710px;
+  height: 368px;
+}
+
+
+.main .menu .container-portfolio .mobile.fernandoMobileView{
+  width: 240px;
+  height: 400px;
+	padding-top: 70px;
+  background-image: url("../img/fernandoMobileView.png");
+	background-repeat: no-repeat;
+	background-size:cover;
+  border-width:40px 13px 60px 13px;
+  border-color: #eee;
+  border-style: solid;
+  border-radius: 15px;
+  margin: 70px auto;
+  overflow: hidden;
+}
+
+.main .menu .container-portfolio .mobile.cicataMobileView{
+  width: 240px;
+  height: 400px;
+	padding-top: 70px;
+  background-image: url("../img/cicataMobileView.png");
+	background-repeat: no-repeat;
+	background-size:cover;
+  border-width:40px 13px 60px 13px;
+  border-color: #eee;
+  border-style: solid;
+  border-radius: 15px;
+  margin: 70px auto;
+  overflow: hidden;
+}
+
+.main .menu .container-portfolio .mobile.ULMobileView{
+  width: 240px;
+  height: 400px;
+	padding-top: 0px;
+  background-image: url("../img/ulmobile.png");
+	background-repeat: no-repeat;
+	background-size:cover;
+  border-width:40px 13px 60px 13px;
+  border-color: #eee;
+  border-style: solid;
+  border-radius: 15px;
+  margin: 70px auto;
+  overflow: hidden;
+}
+
+
+
+
+/* ----- ----- SKILLS ----- ----- */
+
+.main .menu .container-skills{
+	overflow: hidden;
+}
+
+.main .menu .container-skills .skills {
+		padding-top: 570px;
+    background-color: #E5E5E5;
+    padding: 60px 0;
+}
+
+.main .menu .container-skills .skills .container {
+    overflow: hidden;
+}
+
+.main .menu .container-skills .skills .container .title {
+		font-family: 'Cabin Sketch';
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: #FF6679;
+    text-align: center;
+}
+
+.main .menu .container-skills .skills .container .container-inSkills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main .menu .container-skills .skills .container .container-inSkills .skillSample {
+    width: 24%;
+    margin-bottom: 10px;
+		padding-left: 40px;
+}
+
+.main .menu .container-skills .skills .container .container-inSkills .skillSample .thumb {
+    width: 100%;
+}
+
+.main .menu .container-skills .skills .container .container-inSkills .skillSample .thumb i {
+    width: 100%;
+		margin: 10px;
+    text-align: left;
+		color: #FF6679;
+}
+
+.main .menu .container-skills .skills .container-inSkills .skillSample .description {
+    text-align: left;
+		margin: 10px;
+}
+
+.main .menu .container-skills .skills .container-inSkills .skillSample .name {
+    /*font-weight: 400;*/
+    color: #1e2b38;
+    margin-bottom: 5px;
+}
+
+.main .menu .container-skills .skills .container-inSkills .skillSample .technologies {
+    font-size: 14px;
+		font-weight: 300;
+    color: #1e2b38;
+}
+
+
+/* ----- ----- FOOTER ----- ----- */
+footer .social-media{
+  background-color: #1e2b38;
+  padding: 60px 0;
+}
+
+footer .social-media h3{
+	font-family: 'Cabin Sketch';
+	font-size: 34px;
+	font-weight: 400;
+	color: white;
+	text-align: center;
+}
+
+footer .social-media .container{
+  display: flex;
+  justify-content: center;
+}
+
+footer .social-media a{
+  color: #fff;
+  text-align: center;
+  width: 100px;
+  display: block;
+  padding: 15px 0;
+  border-radius: 3px;
+  font-size: 30px;
+  margin: 0 20px;
+}
+
+footer .social-media .twitter:hover{ background: #1da1f2;}
+footer .social-media .github:hover{ background: #6e5494;}
+footer .social-media .linkedIn:hover{ background: #0077b5;}
+footer .social-media .codepen:hover{ background: #fcd000;}
+footer .social-media .behance:hover{ background: #1769ff;}
+
+/* ----- ----- MEDIA QUERIES ----- ----- */
+@media screen and (min-width: 805){
+	.main .menu .container-portfolio .container .container-Portfolio .browser{
+		width: 66%;
+	}
+	.main .menu .container-portfolio .container .container-Portfolio .mobile{
+		width: 33%;
+	}
+}
+
+@media screen and (max-width: 804px) {
+	header .contenedor {
+		position: static;
+		height: auto;
+	}
+
+	header .text {
+		position: static;
+		margin: 100px 0;
+	}
+
+	header .menu {
+		text-align: center;
+	}
+
+	header .menu a {
+		margin: 10px 20px;
+	}
+
+	header .text .name {
+		font-size: 30px;
+	}
+
+	header .text h3 {
+		font-size: 18px;
+	}
+
+	.main .about .foto {
+		width: 100%;
+		position: relative;
+	}
+
+	.main .about article {
+		position: relative;
+		width: 100%;
+		top:-50px;
+		transform:translate(0px, 0);
+		background-color:white;
+	}
+
+	.main .menu {
+		padding-top: 300px;
+	}
+
+	.main .menu article {
+		width: 100%;
+	}
+
+	.main .menu .container-portfolio .container .container-Portfolio .browser{
+		position: absolute;
+		left: -999em;
+	}
+
+	.main .skills .container .container-inSkills .skillSample {
+		width: 46%;
+	}
+
+}
+
+@media screen and (max-width: 700px) {
+	.main .menu .container-skills .skills .container .container-inSkills .skillSample {
+	    width: 33.33%;
+	}
+
+	.main .menu .container-portfolio .container .container-Portfolio .browser{
+		position: absolute;
+		left: -999em;
+	}
+}
+
+@media screen and (max-width: 465px) {
+	.main .about article h3 {
+		font-size: 34px;
+		margin-bottom: 10px;
+	}
+
+	.main .menu .container-skills .skills .container .container-inSkills .skillSample {
+	    width: 50%;
+	}
+
+	.main .menu article .name {
+		font-size: 16px;
+		line-height: 16px;
+	}
+
+	.main .menu .container-portfolio .container .container-Portfolio .browser{
+		position: absolute;
+	  left: -999em;
+	}
+
+	footer .social-media .container {
+		flex-wrap:wrap;
+		padding: 20px 0;
+	}
+}
