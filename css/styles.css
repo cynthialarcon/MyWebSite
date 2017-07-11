@@ -116,9 +116,6 @@ header .text h3 {
 
 }
 /* ----- ----- PORTFOLIO ----- ----- */
-.main .menu .container-portfolio{
-	overflow: hidden;
-}
 
 .main .menu .container-portfolio .portfolio {
 		padding-top: 570px;
@@ -527,6 +524,11 @@ footer .social-media .behance:hover{ background: #1769ff;}
 }
 
 @media screen and (max-width: 804px) {
+	header .container {
+		position: relative;
+		height: 550px;
+	}
+
 	header .contenedor {
 		position: static;
 		height: auto;
@@ -534,7 +536,7 @@ footer .social-media .behance:hover{ background: #1769ff;}
 
 	header .text {
 		position: static;
-		margin: 100px 0;
+		margin: 250px 0;
 	}
 
 	header .menu {
@@ -546,11 +548,11 @@ footer .social-media .behance:hover{ background: #1769ff;}
 	}
 
 	header .text .name {
-		font-size: 30px;
+		font-size: 40px;
 	}
 
 	header .text h3 {
-		font-size: 18px;
+		font-size: 22px;
 	}
 
 	.main .about .foto {
@@ -576,27 +578,67 @@ footer .social-media .behance:hover{ background: #1769ff;}
 
 	.main .menu .container-portfolio .container .container-Portfolio .browser{
 		position: absolute;
-		left: -999em;
+		left: -500em;
 	}
 
-	.main .skills .container .container-inSkills .skillSample {
+	.main .menu .container-skills .skills .container .container-inSkills .skillSample {
 		width: 46%;
 	}
 
 }
 
+@media screen and (max-width: 755px) {
+	.main{
+		background:
+	}
+	.main .menu .container-portfolio .mobile{
+		padding-top: 30px;
+	}
+}
+
 @media screen and (max-width: 700px) {
+	header .container {
+		position: relative;
+		height: 400px;
+	}
+
+	header .text {
+		position: static;
+		margin: 130px 0;
+	}
+
+	header .text .name {
+		font-size: 30px;
+	}
+
+	header .text h3 {
+		font-size: 18px;
+	}
+
 	.main .menu .container-skills .skills .container .container-inSkills .skillSample {
 	    width: 33.33%;
 	}
 
-	.main .menu .container-portfolio .container .container-Portfolio .browser{
+	/*.main .menu .container-portfolio .container .container-Portfolio .browser{
 		position: absolute;
 		left: -999em;
-	}
+	}*/
 }
 
 @media screen and (max-width: 465px) {
+	header .container {
+		position: relative;
+		height: 400px;
+	}
+
+	header .text .name {
+		font-size: 30px;
+	}
+
+	header .text h3 {
+		font-size: 18px;
+	}
+
 	.main .about article h3 {
 		font-size: 34px;
 		margin-bottom: 10px;
@@ -611,10 +653,10 @@ footer .social-media .behance:hover{ background: #1769ff;}
 		line-height: 16px;
 	}
 
-	.main .menu .container-portfolio .container .container-Portfolio .browser{
+	/*.main .menu .container-portfolio .container .container-Portfolio .browser{
 		position: absolute;
 	  left: -999em;
-	}
+	}*/
 
 	footer .social-media .container {
 		flex-wrap:wrap;
